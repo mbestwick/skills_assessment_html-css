@@ -2,36 +2,35 @@
 <html>
 <head>
     <title>Application Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
     <h1>Job Application Form</h1>
 
     <form action="/application-success" method="POST">
-        <p>Please complete each of the following fields:</p><br>
+        <p class="border inline-block">Please complete each of the following fields:</p>
         <div>
-            <p>First Name:</p>
+            <span>First Name:</span>
             <input type="text" name="firstname">
         </div>
         <div>
-            <p>Last Name:</p>
+            <b><span>Last Name:</span></b>
             <input type="text" name="lastname">
         </div>
         <div>
-            <p>Salary Requirement:</p>
+            <span>Salary Requirement:</span>
             <input type="text" name="salary">
         </div>
         <div>
-            <p>Job:</p>
+            <span>Job:</span>
             <select name="job">
                 <option disabled selected>-- select an option --</option>
                 <option value="software_engineer">Software Engineer</option>
                 <option value="qa_engineer">QA Engineer</option>
                 <option value="product_engineer">Product Manager</option>
-            </select>
+            </select><br><br>
             <div><input type="submit"></div>
-
-
     </form>
 
 </body>
