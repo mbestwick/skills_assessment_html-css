@@ -5,9 +5,31 @@
 </head>
 <body>
 
+    <h1>Job Application Form</h1>
+
     <form action="/application-success" method="POST">
-        <div>Please complete the following fields:</div>
-        <input type="text" name="firstname">
+        <p>Please complete each of the following fields:</p><br>
+        <div>
+            <p>First Name:</p>
+            <input type="text" name="firstname">
+        </div>
+        <div>
+            <p>Last Name:</p>
+            <input type="text" name="lastname">
+        </div>
+        <div>
+            <p>Salary Requirement:</p>
+            <input type="text" name="salary">
+        </div>
+        <div>
+            <p>Job:</p>
+            <select name="job">
+                <option disabled selected>-- select an option --</option>
+                <option value="software_engineer">Software Engineer</option>
+                <option value="qa_engineer">QA Engineer</option>
+                <option value="product_engineer">Product Manager</option>
+            </select>
+            <div><input type="submit"></div>
 
 
     </form>
